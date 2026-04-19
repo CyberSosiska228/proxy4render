@@ -9,7 +9,7 @@ async def handle_client(reader, writer):
 
 
 async def main():
-    server = await asyncio.start_server(handle_client, '0.0.0.0', 1080)
+    server = await asyncio.start_server(handle_client, '0.0.0.0', 443)
     await server.serve_forever()
 
 asyncio.run(main())
