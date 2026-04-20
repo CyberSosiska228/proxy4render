@@ -71,6 +71,7 @@ async def echo_handler(message: types.Message):
 # 5. Запуск с глобальной обработкой исключений
 # ------------------------------------------------------------
 async def main():
+    logger.debug(f"Переменная окружения BOT_TOKEN: {TOKEN}")
     logger.info("Бот запускается. Начинаем polling...")
     try:
         await dp.start_polling(bot)
