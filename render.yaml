@@ -3,4 +3,4 @@ services:
     name: test
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: python3 test.py
+    startCommand: python3 main.py
